@@ -15,3 +15,4 @@ fab simple:cmd='echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDev0iSgDlZUpmOzlar4i
 fab simple:cmd='su xingyue -c "chmod 0600  ~/.ssh/authorized_keys"'
 fab simple:cmd='sed -i "s/#PermitRootLogin yes/PermitRootLogin no/" /etc/ssh/sshd_config '
 fab simple:cmd='systemctl restart sshd'
+fab yum:p=git
